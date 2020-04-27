@@ -30,5 +30,5 @@ h = sigmoid(z)
 J =  sum(-y'*(log(h)) - (1-y)'*(log(1-h))) * (1/m);
 
 
-grad = (1/m) * sum((h-y)'*X);
+grad = (X'*(h-y))* (1/m);
 
